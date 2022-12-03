@@ -1,5 +1,6 @@
-class Movie {
-    constructor(title, description, originalTitle, clasification, duration) {
+module.exports.Movie = class Movie {
+    constructor({ id, title, description, originalTitle, clasification, duration }) {
+        this.id = id,
         this.title = title,
         this.description = description,
         this.originalTitle = originalTitle,
