@@ -21,7 +21,7 @@ module.exports = {
     delete: async(movie) => {
         const index = inMemoryDB.movies.findIndex(item => item.id === movie.id)
         if(index >= 0) {
-            inMemoryDB.movies.splice(index, 0)
+            inMemoryDB.movies.splice(index, 1)
             return movie
         }
         return null
