@@ -1,5 +1,5 @@
 const moviesRespository = require('../../../src/infra/repositories/inMemory')
-const { Movie } = require('../../../src/core/entity/index')
+const { Movie } = require('../../../src/entity/index')
 const Chance = require('chance')
 const chance = new Chance()
 const { clone, cloneDeep } = require('lodash')
