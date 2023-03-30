@@ -1,12 +1,14 @@
 const { Response } = require("../../frameworks/common/Response")
 
 module.exports = dependencies => {
-    const { useCases: { getMoviesUseCase }} = dependencies
-    const getAllMovies = async(req, res, next) => {
+    const { useCases: { movie: { getAllMovies } } } = dependencies
+    const getAllMoviesController = async(req, res, next) => {
         try {
-            const { body } = req.body
-            const getAllMovies = getMoviesUseCase(dependencies)
-            const response = await getAllMovies.execute(body)
+            // const { body } = req.body
+            const getAllMoviesController = getAllMovies(dependencies)
+            const response = await getAllMoviesController.execute()
+            console.log('response:', response)
+
             res.json(new Response({
                 status: true, 
                 error: false, 
@@ -17,5 +19,5 @@ module.exports = dependencies => {
             next(error)
         }
     }
-    return getAllMovies
+    return getAllMoviesController
 }

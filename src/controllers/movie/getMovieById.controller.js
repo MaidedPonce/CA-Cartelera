@@ -3,12 +3,13 @@ const { Response } = require("../../frameworks/common/Response")
 
 module.exports = dependencies => {
 
-    const { useCases: { getMovieByIdUseCase } } = dependencies
-    const getMovieById = async (req, res, next) => {
+    const { useCases: { movie: { getMovieById } } } = dependencies
+    const getMovieByIdFunction = async (req, res, next) => {
         try {
             const { id } = req.query
-            const getMovieById = getMovieByIdUseCase(dependencies)
-            const response = await getMovieById.execute(id)
+            console.log(req.query)
+            const getMovieByIdFunction = getMovieById(dependencies)
+            const response = await getMovieByIdFunction.execute(id)
             res.json(new Response({
                 status: true, 
                 error: false, 
@@ -20,5 +21,5 @@ module.exports = dependencies => {
         }
     }
 
-    return getMovieById
+    return getMovieByIdFunction
 }

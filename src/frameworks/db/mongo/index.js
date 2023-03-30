@@ -10,7 +10,7 @@ module.exports = {
     });
     const db = mongoose.connection
     db.on('error', console.error.bind(console, 'Connection to mongo has failed'))
-    db.once('once', () => {
+    db.once('open', () => {
         console.log('Succesfully connected to mongo db cluster')
     })
   },
