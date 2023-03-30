@@ -1,13 +1,9 @@
 const mongoose = require('mongoose')
 const entityMovie = 'Movie'
 
-const { movie: movieSchema } = require('../../db/mongo')
+const Movie = mongoose.models[entityMovie];
 
 const repository = () => {
-    
-    const Movie = mongoose.model(entityMovie, movieSchema)
-
-
     return {
         add: async (movie) => {
             const mongoObject = new Movie(movie)

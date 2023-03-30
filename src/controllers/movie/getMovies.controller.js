@@ -1,7 +1,7 @@
 const { Response } = require("../../frameworks/common/Response")
 
 module.exports = dependencies => {
-    const { useCase: { getMoviesUseCase }} = dependencies
+    const { useCases: { getMoviesUseCase }} = dependencies
     const getAllMovies = async(req, res, next) => {
         try {
             const { body } = req.body

@@ -1,4 +1,4 @@
-const { Movie } = require('../../entity/index')
+const { Movie } = require('../../entities/index')
 
 module.exports = dependencies => {
     const { moviesRepository } = dependencies;
