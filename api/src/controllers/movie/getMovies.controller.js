@@ -1,4 +1,4 @@
-const { Response } = require("../../../frameworks/common/Response")
+const { Response } = require("../../frameworks/common/Response")
 
 module.exports = dependencies => {
     const { useCases: { movie: { getAllMovies } } } = dependencies

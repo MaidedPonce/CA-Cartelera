@@ -4,7 +4,7 @@
   "description": "This is a movie billboard designed with Clean Architecture and node js.",
   "main": "index.js",
   "scripts": {
-    "start": "node --watch index.js",
+    "start": "node --watch ./api/index.js",
     "lint": "eslint",
     "test": "jest"
   },
