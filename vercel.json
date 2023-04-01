@@ -1,7 +1,7 @@
 {
     "version": 2,
     "name": "CA-cartelera",
-    "alias": ["ca"],
+    "alias": ["ca-cartelera"],
     "builds": [{ "src": "index.js", "use": "@vercel/node" }],
     "routes": [{
       "headers": {
