@@ -1,8 +1,7 @@
-const { Response } = require("../../frameworks/common/Response")
+const { Response } = require("../../../frameworks/common/Response")
 
 
 module.exports = dependencies => {
-
     const { useCases: { movie: { getMovieById } } } = dependencies
     const getMovieByIdFunction = async (req, res, next) => {
         try {
