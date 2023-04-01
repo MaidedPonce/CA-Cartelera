@@ -1,6 +1,6 @@
 const express = require('express')
 
-const { movieControllers } = require('../../../api/controllers')
+const { movieControllers } = require('../../../controllers')
 
 module.exports = dependencies => {
     const router = express.Router()
