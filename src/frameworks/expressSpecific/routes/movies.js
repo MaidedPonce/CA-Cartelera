@@ -57,7 +57,7 @@ module.exports = dependencies => {
    *                   schema:
    *                      type: array
    *                      items:
-   *                       $ref: '#/components/schemasMovie'
+   *                       $ref: '#/components/schemas/Movie'
    */
   router.route('/').get(getAllMovies)
   router.route('/:id').get(getMovieById)
