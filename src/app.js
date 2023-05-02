@@ -25,6 +25,7 @@ const swaggerSpec = {
     }
   },
   apis: [`${path.join(__dirname, './frameworks/expressSpecific/routes/*.js')}`]
+
 }
 
 module.exports = {
