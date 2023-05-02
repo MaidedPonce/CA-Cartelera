@@ -7,10 +7,17 @@ const API_PREFIX = process.env.API_PREFIX || '/api/v1'
 const depedencies = require('./config/dependencies')
 const ErrorHandler = require('./frameworks/expressSpecific/ErrorHandler')
 const { connect: connectToMongo } = require('./frameworks/db/mongo')
-const path = require('path')
+const cors = require('cors');
 
 module.exports = {
     start: () => {
+        const corsOptions = {
+            origin: 'http://localhost:5500', // o el dominio que desees permitir
+            methods: ['GET', 'PUT', 'POST', 'DELETE'],
+            allowedHeaders: ['Content-Type', 'Authorization']
+          };
+          
+        app.use(cors(corsOptions));
         app.use(express.json())
         app.use(express.urlencoded({
             extended: true
