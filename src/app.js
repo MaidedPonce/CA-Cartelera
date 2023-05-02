@@ -19,13 +19,12 @@ const swaggerSpec = {
       version: '1.0.0',
       servers: [
         {
-          url: 'http://localhost:3000'
+          url: 'https://ca-cartelera.onrender.com'
         }
       ]
     }
   },
   apis: [`${path.join(__dirname, './frameworks/expressSpecific/routes/*.js')}`]
-
 }
 
 module.exports = {
