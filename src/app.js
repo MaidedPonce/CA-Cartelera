@@ -7,6 +7,7 @@ const API_PREFIX = process.env.API_PREFIX || '/api/v1'
 const depedencies = require('./config/dependencies')
 const ErrorHandler = require('./frameworks/expressSpecific/ErrorHandler')
 const { connect: connectToMongo } = require('./frameworks/db/mongo')
+const path = require('path')
 
 module.exports = {
     start: () => {
