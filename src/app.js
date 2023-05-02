@@ -19,7 +19,7 @@ const swaggerSpec = {
       version: '1.0.0',
       servers: [
         {
-          url: 'https://ca-cartelera.onrender.com'
+          url: 'https://ca-cartelera.onrender.com/api/v1'
         }
       ]
     }
