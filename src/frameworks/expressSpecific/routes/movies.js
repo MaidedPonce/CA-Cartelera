@@ -29,12 +29,16 @@ module.exports = dependencies => {
    *              duration:
    *                  type: string
    *                  description: Duration of the movie
+   *              image:
+   *                 type: string
+   *                 description: Duration of the movie
    *          required:
    *              - title
    *              - description
    *              - originalTitle
    *              - clasification
    *              - duration
+   *              - image
    *          example:
    *              title: Crepusculo
    *              description: 'Bella Swan se va a vivir con su padre, al pueblo de Forks, donde conoce a Edward, un atractivo y misterioso chico con un gran secreto: es un vampiro. Pero la familia del chico guarda una peculiaridad: no se alimenta de sangre humana.'

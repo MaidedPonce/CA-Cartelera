@@ -5,5 +5,6 @@ module.exports = new Schema({
     description: String,
     originalTitle: String,
     clasification: String,
-    duration: String
+    duration: String,
+    image: String
 })
