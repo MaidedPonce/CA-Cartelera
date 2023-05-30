@@ -6,8 +6,8 @@ module.exports = dependencies => {
         throw new Error('The movies repository should be exist')
     }
     
-    const execute = ({ title, description, originalTitle, clasification, duration }) => {
-        const movie = new Movie({ title, description, originalTitle, clasification, duration })
+    const execute = ({ title, description, originalTitle, clasification, duration, image }) => {
+        const movie = new Movie({ title, description, originalTitle, clasification, duration, image })
         return moviesRepository.add(movie)
     }
     return {
