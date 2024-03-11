@@ -12,9 +12,9 @@ const cors = require('cors');
 module.exports = {
     start: () => {
         const corsOptions = {
-            origin: 'https://proyecto-bonito-uwu.vercel.app',
+            origin: 'https://ca-cartelera.onrender.com',
             methods: ['GET', 'PUT', 'POST', 'DELETE'],
-            allowedHeaders: ['Content-Type', 'Authorization']
+            allowedHeaders: ['Content-Type', 'Authorization'],
           };
           
         app.use(cors(corsOptions));
