@@ -12,7 +12,7 @@ const cors = require('cors');
 module.exports = {
     start: () => {
         const corsOptions = {
-            origin: 'https://ca-cartelera.onrender.com',
+            origin: 'http://localhost:5500',
             methods: ['GET', 'PUT', 'POST', 'DELETE'],
             allowedHeaders: ['Content-Type', 'Authorization'],
           };
