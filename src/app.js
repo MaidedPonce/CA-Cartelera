@@ -12,7 +12,7 @@ const cors = require('cors');
 module.exports = {
     start: () => {
         const corsOptions = {
-            origin: 'http://localhost:5500',
+            origin: '*',
             methods: ['GET', 'PUT', 'POST', 'DELETE'],
             allowedHeaders: ['Content-Type', 'Authorization'],
           };
