@@ -18,7 +18,6 @@ const repository = () => {
             })
         },
         getAll: async () => {
-            console.log({...Movie})
             return Movie.find()
         }
     }

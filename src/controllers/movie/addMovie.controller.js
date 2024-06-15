@@ -6,7 +6,6 @@ module.exports = dependencies => {
     const addMovieByIdFunction = async (req, res, next) => {
         try {
             const body = req.body
-            console.log(body)
             const addMovieByIdFunction = addMovieUseCase(dependencies)
             const response = await addMovieByIdFunction.execute(body)
             res.json(new Response({

@@ -6,7 +6,6 @@ module.exports = dependencies => {
     const getMovieByIdFunction = async (req, res, next) => {
         try {
             const { id } = req.query
-            console.log(req.query)
             const getMovieByIdFunction = getMovieById(dependencies)
             const response = await getMovieByIdFunction.execute(id)
             res.json(new Response({

@@ -4,7 +4,7 @@ const { movieControllers } = require('../../../controllers')
 
 module.exports = dependencies => {
   const router = express.Router()
-  const { getMovieById, getAllMovies, addMovies } =
+  const { getMovieById, getAllMovies, addMovies, getRandom } =
     movieControllers(dependencies)
 
   /**
@@ -62,7 +62,8 @@ module.exports = dependencies => {
    *                      type: array
    *                      items:
    *                       $ref: '#/components/schemas/Movie'
-   */
+  */
+  router.route('/random').get(getRandom)
   router.route('/').get(getAllMovies)
   router.route('/:id').get(getMovieById)
   router.route('/').post(addMovies)
